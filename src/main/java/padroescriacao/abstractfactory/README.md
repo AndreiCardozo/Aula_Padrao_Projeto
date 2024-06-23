@@ -1,12 +1,25 @@
 <h1 align="center">Diagrama e a Proposta</h1>
 
-A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associação de 0..1 com a classe abstrata `Funcionario`. A classe `Funcionario` é a classe pai para as classes `FuncionarioAtendente`, `FuncionarioChapeiro` e `FuncionarioCozinheiro`. Cada uma dessas classes possui uma associação de 1 para 1 com as classes `TipoPedidoRefrigerante`, `TipoPedidoHamburger` e `TipoPedidoBatata`, respectivamente. Todas essas classes herdam da interface `TipoPedido`. Um `TipoPedido` pode estar associado a 0 ou mais `Funcionarios`. 
+A imagem representa um diagrama de classes UML, mostrando um padrão de projeto Abstract Factory. 
+
+A interface `AbstractFactory` é implementada por duas classes concretas: `FabricaCarro` e `FabricaMoto`. 
+ 
+A classe `Veiculo` tem uma relação de dependência com as interfaces `Motor` e `Cambio`. 
+ 
+As interfaces `Motor` e `Cambio` são implementadas por classes concretas específicas para carros e motos, como `MotorCarro`, `CambioCarro`, `MotorMoto` e `CambioMoto`. 
+ 
+A relação entre as classes `FabricaCarro` e `FabricaMoto` com as classes concretas de `Motor` e `Cambio` é representada por linhas tracejadas, indicando que a criação de objetos dessas classes é delegada para as fábricas.  
+ 
+Esse padrão de projeto permite a criação de famílias de objetos relacionados, garantindo que objetos criados sejam compatíveis entre si. 
 
 ![](./docs/diagram.jpg?raw=true "Diagrama")
 
+
+
 <h2 align="center">Evidências de Execução (Captura de tela de sucesso dos testes)</h2>
 
-![PedidoTest](https://github.com/AndreiCardozo/CloningNetflix/assets/67652151/145af0cc-e9b4-441b-93b5-7600709e5921)
+![Teste Terminal](https://github.com/WallaceRomualdoJF/Aula_Padrao_Projeto/assets/67652151/95c57480-c9c5-4b6a-ab2b-196d452f64b8)
+
 
 <h1 align="center">Autores</h1>
 
@@ -30,3 +43,4 @@ A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associa
       </a> <br/>
       <a href="https://github.com/Gpimentel7" title="Gustavo Pimentel"></a>
     </td>
+</table>

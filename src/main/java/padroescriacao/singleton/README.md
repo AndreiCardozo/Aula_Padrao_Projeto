@@ -1,12 +1,9 @@
-<h1 align="center">Diagrama e a Proposta</h1>
-
-A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associação de 0..1 com a classe abstrata `Funcionario`. A classe `Funcionario` é a classe pai para as classes `FuncionarioAtendente`, `FuncionarioChapeiro` e `FuncionarioCozinheiro`. Cada uma dessas classes possui uma associação de 1 para 1 com as classes `TipoPedidoRefrigerante`, `TipoPedidoHamburger` e `TipoPedidoBatata`, respectivamente. Todas essas classes herdam da interface `TipoPedido`. Um `TipoPedido` pode estar associado a 0 ou mais `Funcionarios`. 
-
-![](./docs/diagram.jpg?raw=true "Diagrama")
+<h2 align="center">Singleton</h2>
+A classe Produto é implementada como um Singleton, garantindo que apenas uma instância dela exista em todo o programa. O construtor privado impede a criação de novas instâncias, enquanto uma instância estática é criada quando a classe é carregada. Um método público fornece acesso a essa instância única. Além disso, a classe possui atributos para armazenar informações sobre um produto, com métodos para obter e definir esses valores de maneira controlada.
 
 <h2 align="center">Evidências de Execução (Captura de tela de sucesso dos testes)</h2>
 
-![PedidoTest](https://github.com/AndreiCardozo/CloningNetflix/assets/67652151/145af0cc-e9b4-441b-93b5-7600709e5921)
+![Captura de tela 2024-06-22 204333](https://github.com/WallaceRomualdoJF/Aula_Padrao_Projeto/assets/67652151/c6495d63-62a7-4165-b288-6bd507cf1100)
 
 <h1 align="center">Autores</h1>
 
@@ -30,3 +27,4 @@ A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associa
       </a> <br/>
       <a href="https://github.com/Gpimentel7" title="Gustavo Pimentel"></a>
     </td>
+</table>

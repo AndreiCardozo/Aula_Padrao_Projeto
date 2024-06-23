@@ -1,12 +1,26 @@
 <h1 align="center">Diagrama e a Proposta</h1>
 
-A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associação de 0..1 com a classe abstrata `Funcionario`. A classe `Funcionario` é a classe pai para as classes `FuncionarioAtendente`, `FuncionarioChapeiro` e `FuncionarioCozinheiro`. Cada uma dessas classes possui uma associação de 1 para 1 com as classes `TipoPedidoRefrigerante`, `TipoPedidoHamburger` e `TipoPedidoBatata`, respectivamente. Todas essas classes herdam da interface `TipoPedido`. Um `TipoPedido` pode estar associado a 0 ou mais `Funcionarios`. 
+A imagem representa um diagrama de classes UML que demonstra o padrão de projeto Builder.
+
+A classe `Empresa` possui os atributos `cnpj`, `razaoSocial`, `nomeFantasia` e `telefone`. 
+A classe `EmpresaBuilder` tem a responsabilidade de construir objetos da classe `Empresa`. 
+Ela possui o método `build()`, que retorna um objeto `Empresa` completamente construído.
+
+A relação entre as classes `Empresa` e `EmpresaBuilder` é representada por uma linha tracejada, indicando que `EmpresaBuilder` é responsável por construir objetos da classe `Empresa`.  
+A seta pontilhada indica uma relação de dependência entre `EmpresaBuilder` e `Empresa`. 
+
+Esse padrão de projeto é útil para construir objetos complexos, separando a construção dos objetos da sua representação. 
+Ele facilita a criação de objetos complexos com diversas configurações. 
 
 ![](./docs/diagram.jpg?raw=true "Diagrama")
 
+
+
 <h2 align="center">Evidências de Execução (Captura de tela de sucesso dos testes)</h2>
 
-![PedidoTest](https://github.com/AndreiCardozo/CloningNetflix/assets/67652151/145af0cc-e9b4-441b-93b5-7600709e5921)
+![Teste Builder](https://github.com/WallaceRomualdoJF/Aula_Padrao_Projeto/assets/67652151/97460d8b-cefe-49a4-91ae-317745e23747)
+
+
 
 <h1 align="center">Autores</h1>
 
@@ -30,3 +44,4 @@ A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associa
       </a> <br/>
       <a href="https://github.com/Gpimentel7" title="Gustavo Pimentel"></a>
     </td>
+</table>

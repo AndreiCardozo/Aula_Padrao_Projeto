@@ -1,12 +1,22 @@
 <h1 align="center">Diagrama e a Proposta</h1>
 
-A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associação de 0..1 com a classe abstrata `Funcionario`. A classe `Funcionario` é a classe pai para as classes `FuncionarioAtendente`, `FuncionarioChapeiro` e `FuncionarioCozinheiro`. Cada uma dessas classes possui uma associação de 1 para 1 com as classes `TipoPedidoRefrigerante`, `TipoPedidoHamburger` e `TipoPedidoBatata`, respectivamente. Todas essas classes herdam da interface `TipoPedido`. Um `TipoPedido` pode estar associado a 0 ou mais `Funcionarios`. 
+O diagrama representa um padrão de projeto Abstract Factory. 
+
+A interface `IServico` define os métodos `executar()` e `cancelar()`, que são implementados pelas classes concretas `ServicoVenda`, `ServicoEmissaoNotaFiscal` e `ServicoCadastro`.
+
+A classe `ServicoFactory` é responsável por criar instâncias das classes concretas de serviço, através do método `obterServico()`.
+
+Esse padrão de projeto permite a criação de famílias de objetos relacionados, garantindo que objetos criados sejam compatíveis entre si.
 
 ![](./docs/diagram.jpg?raw=true "Diagrama")
 
+
 <h2 align="center">Evidências de Execução (Captura de tela de sucesso dos testes)</h2>
 
-![PedidoTest](https://github.com/AndreiCardozo/CloningNetflix/assets/67652151/145af0cc-e9b4-441b-93b5-7600709e5921)
+![EmissãoNotaFiscal](https://github.com/WallaceRomualdoJF/Aula_Padrao_Projeto/assets/67652151/2d85f5ea-a768-4e4a-ab83-f601de14de6d)
+![ServicoFactoryTest](https://github.com/WallaceRomualdoJF/Aula_Padrao_Projeto/assets/67652151/360b7007-b644-48f6-912b-fb76a931d455)
+![ServicoVendaTest](https://github.com/WallaceRomualdoJF/Aula_Padrao_Projeto/assets/67652151/abb75ec2-e6a8-4d36-829f-a7c88fcb919b)
+
 
 <h1 align="center">Autores</h1>
 
@@ -30,3 +40,4 @@ A imagem mostra um diagrama de classes UML. A classe `Pedido` possui uma associa
       </a> <br/>
       <a href="https://github.com/Gpimentel7" title="Gustavo Pimentel"></a>
     </td>
+</table>
